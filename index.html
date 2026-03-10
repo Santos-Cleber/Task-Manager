@@ -29,12 +29,25 @@
         </p>
       </section>
       <section class="task-filters">
-        <button id="allTasksBtn" class="task-filter__all">Todas</button>
-        <button id="activeTasksBtn" class="task-filter__active">Ativas</button>
-        <button id="completedTasksBtn" class="task-filter__completed">
+        <button
+          class="task-filters__btn task-filters__btn--active"
+          data-filter="all"
+        >
+          Todas
+        </button>
+        <button class="task-filters__btn" data-filter="active">Ativas</button>
+        <button class="task-filters__btn" data-filter="completed">
           Concluídas
         </button>
       </section>
+      <footer class="task-footer">
+        <p class="task-footer__count">
+          Tarefas restantes: <span id="taskCount">0</span>
+        </p>
+        <button id="clearCompletedBtn" class="task-footer__clear">
+          Limpar
+        </button>
+      </footer>
     </main>
   </body>
 </html>
