@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="header__title">Task-Manager</h1>
+      <p class="header__subtitle">Organize suas tarefas do dia a dia</p>
+    </header>
+    <main class="container">
+      <section class="task-form">
+        <input
+          class="task-form__input"
+          type="text"
+          placeholder="Digite uma nova tarefa..."
+          id="taskInput"
+        />
+        <button id="addTaskBtn" class="task-form__button">+ Adicionar</button>
+      </section>
+      <section class="task-list">
+        <ul id="taskList" class="task-list__ul">
+          <!--As tarefas serão adicionadas aqui pelo JavaScript -->
+        </ul>
+        <p id="emptyMessage" class="task-list__empty">
+          Nenhuma tarefa adicionada. Adicione uma nova tarefa para começar!
+        </p>
+      </section>
+      <section class="task-filters">
+        <button
+          class="task-filters__btn task-filters__btn--active"
+          data-filter="all"
+        >
+          Todas
+        </button>
+        <button class="task-filters__btn" data-filter="active">Ativas</button>
+        <button class="task-filters__btn" data-filter="completed">
+          Concluídas
+        </button>
+      </section>
+      <footer class="task-footer">
+        <p class="task-footer__count">
+          Tarefas restantes: <span id="taskCount">0</span>
+        </p>
+        <button id="clearCompletedBtn" class="task-footer__clear">
+          Limpar
+        </button>
+      </footer>
+    </main>
+
+    <script src="src/js/storage.js"></script>
+    <script src="src/js/tasks.js"></script>
+    <script src="src/js/app.js"></script>
+  </body>
+</html>
