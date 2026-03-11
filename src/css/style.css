@@ -98,3 +98,46 @@ body {
 .task-form__input:focus {
   border-color: var(--color-primary);
 }
+.task-form__button {
+  padding: var(--spacing-sm) var(--spacing-lg);
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.task-form__button:hover {
+  background-color: var(--color-primary-dark);
+}
+/* ================================
+    FILTRO DE TAREFAS
+================================ */
+.task-filters {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+  margin-top: var(--spacing-sm);
+}
+.task-filters__btn {
+  padding: var(--spacing-sm) var(--spacing-lg);
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  border: 2px solid var(--color-primary);
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  cursor: pointer;
+  transition:
+    background-color 0.3s,
+    border-color 0.3s;
+}
+.task-filters__btn:hover,
+.task-filters__btn--active {
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+  border-color: var(--color-primary-dark);
+}
+/* ================================
+   LISTA DE TAREFAS
+================================ */
