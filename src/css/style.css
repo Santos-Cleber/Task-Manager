@@ -1,0 +1,62 @@
+/* ================================
+   RESET
+================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ================================
+   VARIÁVEIS
+================================ */
+:root {
+  /* Cores */
+  --color-primary: #606c38; /* verde musgo */
+  --color-primary-dark: #404d25; /* verde musgo escuro */
+  --color-accent: #c9a84c; /* dourado */
+  --color-accent-dark: #a8893d; /* dourado escuro */
+  --color-bg: #f5f5f0; /* branco gelo */
+  --color-surface: #ffffff; /* branco puro */
+  --color-text: #2d2d2d; /* texto escuro */
+  --color-text-light: #777777; /* texto secundário */
+  --color-completed: #aaaaaa; /* tarefa concluída */
+  --color-border: #e0e0d8; /* bordas */
+
+  /* Tipografia */
+  --font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --font-size-base: 16px;
+
+  /* Espaçamentos */
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  /* Bordas */
+  --border-radius: 8px;
+  --border-radius-lg: 16px;
+
+  /* Sombras */
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+/* ================================
+   GLOBAL
+================================ */
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  min-height: 100vh;
+}
+/*===================================
+    header
+===================================*/
+header {
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+  padding: var(--spacing-lg);
+  text-align: center;
+  box-shadow: var(--shadow);
+}
