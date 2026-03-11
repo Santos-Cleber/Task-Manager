@@ -53,10 +53,19 @@ body {
 /*===================================
     header
 ===================================*/
-header {
+.header {
   background-color: var(--color-primary);
   color: var(--color-surface);
   padding: var(--spacing-lg);
   text-align: center;
   box-shadow: var(--shadow);
+}
+.header__title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-sm);
+}
+.header__subtitle {
+  font-size: 1rem;
+  color: var(--color-bg);
 }
