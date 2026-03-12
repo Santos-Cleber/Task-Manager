@@ -224,3 +224,30 @@ body {
 .task-item__delete:hover {
   opacity: 1;
 }
+/* ================================
+   RESPONSIVO
+================================ */
+@media (max-width: 600px) {
+  .task-form {
+    flex-direction: column;
+  }
+
+  .task-form__button {
+    width: 100%;
+  }
+
+  .task-filters {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .task-footer {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    text-align: center;
+  }
+
+  .task-footer__clear {
+    width: 100%;
+  }
+}
