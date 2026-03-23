@@ -39,4 +39,4 @@ Aplicação de gerenciamento de tarefas desenvolvida com HTML, CSS e JavaScript 
 
 ## 👨‍💻 Autor
 
-Feito por **Seu Nome** — [LinkedIn](https://linkedin.com/in/cleber-dos-santos) · [GitHub](https://github.com/Santos-Cleber)
+Feito por Santos-Cleber — [LinkedIn](https://linkedin.com/in/cleber-dos-santos) · [GitHub](https://github.com/Santos-Cleber)
